@@ -10,9 +10,6 @@ def qualityGateValidation(qg) {
 pipeline {
   agent {label "net"}
 
-  tools {
-      msbuild 'msbuild'
-  }
 
   environment {
       // General Variables for Pipeline
