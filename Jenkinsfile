@@ -8,7 +8,7 @@ def qualityGateValidation(qg) {
   return false
 }
 pipeline {
-  agent any
+  agent {label "net"}
 
   tools {
       msbuild 'msbuild'
