@@ -54,6 +54,10 @@ pipeline {
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
                       //}
                     //}
+                    timeout(time: 3, unit: 'MINUTES') {
+                    // In case of SonarQube failure or direct timeout exceed, stop Pipeline
+                    waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
+            }
                 }
             }
       }
@@ -91,5 +95,5 @@ def qualityGateValidation(qg) {
   if (qg.status != 'OK') {
     return true
   }
-   return false
+  return false
 }
