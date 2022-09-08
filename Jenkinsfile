@@ -61,8 +61,9 @@ pipeline {
       
     
   }
+
 }
-}
+
 
 // Function to validate that the message returned from SonarQube is ok
 def qualityGateValidation(qg) {
