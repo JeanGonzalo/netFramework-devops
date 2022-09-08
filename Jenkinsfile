@@ -1,5 +1,5 @@
 
-Pipeline {
+pipeline {
  agent {label "net"}
 
 
