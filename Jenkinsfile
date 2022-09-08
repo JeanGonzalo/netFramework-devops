@@ -43,7 +43,7 @@ pipeline {
                     //docker.image('sonarsource/sonar-scanner-cli').inside('-u 0') {
                       //withSonarQubeEnv('Sonar Qube Server') {
 
-                        powershell  "SonarScanner.MSBuild.exe /k:'${PROJECT_ROOT}' /d:sonar.host.url='${SONAR_HOST_URL}' /d:sonar.login='${SONAR_AUTH_TOKEN}' sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
+                        powershell  "SonarScanner.MSBuild.exe /k:'${PROJECT_ROOT}' /d:sonar.host.url='${SONAR_HOST_URL}' sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
                                     MsBuild.exe /t:Rebuild \
                                     SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
 
