@@ -47,10 +47,10 @@ pipeline {
                         // powershell "MsBuild.exe /t:Rebuild "
                         // powershell "SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
 
-                        powershell  " sonar-scanner -X sonar.host.url='http://localhost:9000' \
-                              sonar.login=${SONAR_AUTH_TOKEN} \
-                              sonar.projectKey=${PROJECT_ROOT} \
-                              sonar.projectName=${PROJECT_ROOT} "
+                        powershell  " sonar-scanner -X -D sonar.host.url='http://localhost:9000' \
+                              -D sonar.login=${SONAR_AUTH_TOKEN} \
+                              -D sonar.projectKey=${PROJECT_ROOT} \
+                              -D sonar.projectName=${PROJECT_ROOT} "
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
                       //}
                     //}
