@@ -52,32 +52,6 @@ pipeline {
                 }
             }
       }
-
-      
-      stage('scan') {
-          environment {
-            // Previously defined in the Jenkins "Global Tool Configuration"
-            scannerHome = tool 'sonar-scanner'
-          }
-          steps {
-            // "sonarqube" is the server configured in "Configure System"
-            withSonarQubeEnv('sonarqube') {
-              // Execute the SonarQube scanner with desired flags
-              sh "${scannerHome}/bin/sonar-scanner \
-                          -Dsonar.projectKey=Project-Test:Test \
-                          -Dsonar.projectName=Project-Test \
-                          -Dsonar.projectVersion=0.0.${BUILD_NUMBER} \
-                          -Dsonar.host.url=http://mysonarqube:9000 \
-                          -Dsonar.sources=. \
-                          -Dsonar.login=admin \
-                          -Dsonar.password=admin"
-            }
-            timeout(time: 3, unit: 'MINUTES') {
-              // In case of SonarQube failure or direct timeout exceed, stop Pipeline
-              waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
-            }
-          }
-      }
   }
 }
 
