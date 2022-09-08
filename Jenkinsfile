@@ -30,10 +30,10 @@
                     docker.image('sonarsource/sonar-scanner-cli:4.4').inside('-u 0') {
                       withSonarQubeEnv('Sonar Qube Server') {
 
-                        pwsh  " sonar-scanner -X -Dsonar.host.url=\$SONAR_HOST_URL \
-                              -Dsonar.login=\$SONAR_AUTH_TOKEN \
-                              -Dsonar.projectKey=project test \
-                              -Dsonar.projectName=project test 
+                        pwsh  " sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
+                              -Dsonar.login=${SONAR_AUTH_TOKEN} \
+                              -Dsonar.projectKey=${PROJECT_ROOT} \
+                              -Dsonar.projectName=${PROJECT_ROOT} \
                               
                             "
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
