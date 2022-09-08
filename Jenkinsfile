@@ -12,7 +12,7 @@ def jsonParse(def json) {
 }
 
 pipeline {
- agent {label "net"}
+  agent {label "net"}
 
 
   environment {
@@ -37,26 +37,17 @@ pipeline {
             // }
             steps {
                 script {
-                    //def projectVersion = getShortCommitId()
-                    def pullRequestParams = ""
+                    
 
-                    //docker.image('sonarsource/sonar-scanner-cli').inside('-u 0') {
-                      //withSonarQubeEnv('Sonar Qube Server') {
-
-                        // powershell "SonarScanner.MSBuild.exe begin /k:'${PROJECT_ROOT}' /d:sonar.host.url='${SONAR_HOST_URL}' sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} "
-                        // powershell "MsBuild.exe /t:Rebuild "
-                        // powershell "SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
-
-                        powershell  " sonar-scanner -X -D sonar.host.url='http://localhost:9000' \
+                        powershell  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
                               -D sonar.login=${SONAR_AUTH_TOKEN} \
                               -D sonar.projectKey=${PROJECT_ROOT} \
                               -D sonar.projectName=${PROJECT_ROOT} "
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
-                      //}
-                    //}
-                    timeout(time: 3, unit: 'MINUTES') {
-                    // In case of SonarQube failure or direct timeout exceed, stop Pipeline
-                    waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
+                    
+                    // timeout(time: 3, unit: 'MINUTES') {
+                    // // In case of SonarQube failure or direct timeout exceed, stop Pipeline
+                    // waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
             }
                 }
             }
