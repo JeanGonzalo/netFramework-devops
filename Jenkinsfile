@@ -44,9 +44,6 @@ def qualityGateValidation(qg) {
       }
     
       stage("SonarQube - Static Code Analysis") {
-            // when {
-            //     expression { !enableDeploy() }
-            // }
             steps {
                 script {
                     //def projectVersion = getShortCommitId()
@@ -65,11 +62,3 @@ def qualityGateValidation(qg) {
                 }
             }
       }
-
-      
-    
-  }
-
-
-
-
