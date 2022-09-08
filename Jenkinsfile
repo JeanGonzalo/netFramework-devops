@@ -43,14 +43,14 @@ pipeline {
                     //docker.image('sonarsource/sonar-scanner-cli').inside('-u 0') {
                       //withSonarQubeEnv('Sonar Qube Server') {
 
-                        powershell "SonarScanner.MSBuild.exe begin /k:'${PROJECT_ROOT}' /d:sonar.host.url='${SONAR_HOST_URL}' sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} "
-                        powershell "MsBuild.exe /t:Rebuild "
-                        powershell "SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
+                        // powershell "SonarScanner.MSBuild.exe begin /k:'${PROJECT_ROOT}' /d:sonar.host.url='${SONAR_HOST_URL}' sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} "
+                        // powershell "MsBuild.exe /t:Rebuild "
+                        // powershell "SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
 
-                        // powershell  " sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
-                        //       -Dsonar.login=${SONAR_AUTH_TOKEN} \
-                        //       -Dsonar.projectKey=${PROJECT_ROOT} \
-                        //       -Dsonar.projectName=${PROJECT_ROOT} "
+                        powershell  " sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
+                              -Dsonar.login=${SONAR_AUTH_TOKEN} \
+                              -Dsonar.projectKey=${PROJECT_ROOT} \
+                              -Dsonar.projectName=${PROJECT_ROOT} "
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
                       //}
                     //}
