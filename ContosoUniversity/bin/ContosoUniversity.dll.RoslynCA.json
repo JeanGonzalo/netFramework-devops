@@ -12,27 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/App_Start/BundleConfig.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 18,
-                  "endLine": 6,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
@@ -108,6 +87,27 @@
                   "startColumn": 13,
                   "endLine": 64,
                   "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/App_Start/FilterConfig.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 30
                 }
               }
             }
@@ -241,54 +241,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/DepartmentController.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 31,
-                  "endLine": 18,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'db' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/HomeController.cs",
                 "region": {
                   "startLine": 14,
                   "startColumn": 31,
                   "endLine": 14,
                   "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/App_Start/FilterConfig.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 18,
-                  "endLine": 6,
-                  "endColumn": 30
                 }
               }
             }
@@ -305,27 +263,6 @@
             {
               "resultFile": {
                 "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/StudentController.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 31,
-                  "endLine": 18,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'db' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/InstructorController.cs",
                 "region": {
                   "startLine": 18,
                   "startColumn": 31,
@@ -365,6 +302,69 @@
                   "startColumn": 29,
                   "endLine": 68,
                   "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'db' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/InstructorController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 31,
+                  "endLine": 18,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'db' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/DepartmentController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 31,
+                  "endLine": 18,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/App_Start/BundleConfig.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 30
                 }
               }
             }
@@ -445,27 +445,6 @@
           }
         },
         {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'sql'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/CourseController.cs",
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 17,
-                  "endLine": 30,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3011",
           "level": "warning",
           "message": "Make sure that this accessibility bypass is safe here.",
@@ -520,6 +499,27 @@
                   "startColumn": 97,
                   "endLine": 49,
                   "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'sql'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/Visual-Projects/ContosoUniversity/ContosoUniversity/Controllers/CourseController.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 17,
+                  "endLine": 30,
+                  "endColumn": 20
                 }
               }
             }
