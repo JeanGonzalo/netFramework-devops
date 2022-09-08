@@ -1,29 +1,4 @@
-import hudson.model.*
-import hudson.EnvVars
-import groovy.json.JsonSlurperClassic
-import groovy.json.JsonBuilder
-import groovy.json.JsonOutput
-import java.net.URL
-import java.net.URLEncoder
-
-@NonCPS
-def jsonParse(def json) {
-    new groovy.json.JsonSlurperClassic().parseText(json)
-}
-
-// Function to validate that the message returned from SonarQube is ok
-def qualityGateValidation(qg) {
-  if (qg.status != 'OK') {
-    return true
-  }
-   return false
-}
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pipeline {
-  agent {
-    label "net"
-  }
+ agent {label "net"}
 
 
   environment {
@@ -39,11 +14,13 @@ def qualityGateValidation(qg) {
       stage('Checkout') {
         steps {
         // Get Github repo using Github credentials (previously added to Jenkins credentials)
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JeanGonzalo/netFramework-devops.git']]])        
-        }
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JeanGonzalo/netFramework-devops.git']]])        }
       }
     
       stage("SonarQube - Static Code Analysis") {
+            // when {
+            //     expression { !enableDeploy() }
+            // }
             steps {
                 script {
                     //def projectVersion = getShortCommitId()
@@ -60,4 +37,41 @@ def qualityGateValidation(qg) {
                       }
                     }
                 }
-    
+            }
+      }
+
+      
+      // stage('scan') {
+      //     environment {
+      //       // Previously defined in the Jenkins "Global Tool Configuration"
+      //       scannerHome = tool 'sonar-scanner'
+      //     }
+      //     steps {
+      //       // "sonarqube" is the server configured in "Configure System"
+      //       withSonarQubeEnv('sonarqube') {
+      //         // Execute the SonarQube scanner with desired flags
+      //         sh "${scannerHome}/bin/sonar-scanner \
+      //                     -Dsonar.projectKey=Project-Test:Test \
+      //                     -Dsonar.projectName=Project-Test \
+      //                     -Dsonar.projectVersion=0.0.${BUILD_NUMBER} \
+      //                     -Dsonar.host.url=http://mysonarqube:9000 \
+      //                     -Dsonar.sources=. \
+      //                     -Dsonar.login=admin \
+      //                     -Dsonar.password=admin"
+      //       }
+      //       timeout(time: 3, unit: 'MINUTES') {
+      //         // In case of SonarQube failure or direct timeout exceed, stop Pipeline
+      //         waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
+      //       }
+      //     }
+      // }
+  }
+}
+
+// Function to validate that the message returned from SonarQube is ok
+def qualityGateValidation(qg) {
+  if (qg.status != 'OK') {
+    return true
+  }
+   return false
+}
