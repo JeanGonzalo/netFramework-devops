@@ -24,7 +24,7 @@
             // }
             steps {
                 script {
-                    def projectVersion = getShortCommitId()
+                    //def projectVersion = getShortCommitId()
                     def pullRequestParams = ""
 
                     docker.image('sonarsource/sonar-scanner-cli:4.4').inside('-u 0') {
