@@ -47,7 +47,7 @@ pipeline {
                         // powershell "MsBuild.exe /t:Rebuild "
                         // powershell "SonarScanner.MSBuild.exe end /d:sonar.login='${SONAR_AUTH_TOKEN}' "
 
-                        powershell  " sonar-scanner -X -Dsonar.host.url=${SONAR_HOST_URL} \
+                        powershell  " sonar-scanner -X -Dsonar.host.url='http://localhost:9000' \
                               -Dsonar.login=${SONAR_AUTH_TOKEN} \
                               -Dsonar.projectKey=${PROJECT_ROOT} \
                               -Dsonar.projectName=${PROJECT_ROOT} "
