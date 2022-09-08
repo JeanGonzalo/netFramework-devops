@@ -61,4 +61,4 @@ def qualityGateValidation(qg) {
                     }
                 }
             }
-      }
+      }}
