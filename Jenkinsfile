@@ -52,6 +52,16 @@ pipeline {
                 }
             }
       }
+
+      stage("Build .net framework") {
+            steps {
+                script {
+                    
+
+                        powershell  " MsBuild.exe /t:Rebuild "
+                }
+            }
+      }
   }
 }
 
