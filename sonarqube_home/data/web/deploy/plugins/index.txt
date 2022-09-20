@@ -1,0 +1,16 @@
+python,true,sonar-python-plugin-3.8.0.8883.jar|a1752f2c00f43d44432969d0f491d765
+kotlin,true,sonar-kotlin-plugin-2.7.0.948.jar|b5dbe8b2adfc1795e0c6f7ae480b233b
+go,false,sonar-go-plugin-1.8.3.2219.jar|a32346d2972fa84fc6b3d40737243092
+jacoco,false,sonar-jacoco-plugin-1.1.1.1157.jar|c3b0852dcc82e97e572ca0812c0afd7d
+iac,false,sonar-iac-plugin-1.4.0.1294.jar|2a319e0553df13abff649cf868ea761f
+javascript,true,sonar-javascript-plugin-8.6.0.16913.jar|72366bc0c9883b0d38b7894105881cd8
+ruby,true,sonar-ruby-plugin-1.8.3.2219.jar|5c0f057d63cc62a7e933a379439fe94e
+sonarscala,true,sonar-scala-plugin-1.8.3.2219.jar|7c6964005890277d5931b223aadbf539
+csharp,false,sonar-csharp-plugin-8.32.0.39516.jar|52e56873647712ab73009e7f8974a536
+java,true,sonar-java-plugin-7.5.0.28054.jar|a9e63bcf97e5e126c41c7554d107602d
+web,true,sonar-html-plugin-3.4.0.2754.jar|16aa0f649cd407d844968bcf80a8be6e
+xml,true,sonar-xml-plugin-2.4.0.3273.jar|34716af00ace2f81bf9125e956697c4b
+flex,false,sonar-flex-plugin-2.6.2.2641.jar|59eb67fb18765052e33590471fb1e707
+php,true,sonar-php-plugin-3.21.2.8292.jar|687b92d0d6cbe6c5efb2399e4f9b3298
+vbnet,false,sonar-vbnet-plugin-8.32.0.39516.jar|0ff4a92d768c86ac55df47adacf1d9e8
+config,false,sonar-config-plugin-1.1.0.185.jar|aad6644e63ae4a2c1be629e7a1b68f5e
