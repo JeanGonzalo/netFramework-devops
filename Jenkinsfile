@@ -39,7 +39,7 @@ pipeline {
                 script {
                     
 
-                        powershell  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
+                        sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
                               -D sonar.login=${SONAR_AUTH_TOKEN} \
                               -D sonar.projectKey=${PROJECT_ROOT} \
                               -D sonar.projectName=${PROJECT_ROOT} "
@@ -53,15 +53,15 @@ pipeline {
             }
       }
 
-      stage("Build .net framework") {
-            steps {
-                script {
+      // stage("Build .net framework") {
+      //       steps {
+      //           script {
                     
 
-                        powershell  " MsBuild.exe /t:Rebuild "
-                }
-            }
-      }
+      //                   powershell  " MsBuild.exe /t:Rebuild "
+      //           }
+      //       }
+      // }
   }
 }
 
