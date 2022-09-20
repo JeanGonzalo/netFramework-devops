@@ -36,7 +36,7 @@ pipeline {
             //     expression { !enableDeploy() }
             // }
             steps {
-                docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock') {
+                docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock --entrypoint="" --net net_devops') {
                         sh "--version"
                         }
 
