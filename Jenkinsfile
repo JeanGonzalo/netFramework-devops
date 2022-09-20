@@ -43,10 +43,11 @@ pipeline {
                 script {
                     
 
-                        sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
-                              -D sonar.login=${SONAR_AUTH_TOKEN} \
-                              -D sonar.projectKey=${PROJECT_ROOT} \
-                              -D sonar.projectName=${PROJECT_ROOT} "
+                        sh  " sonar-scanner \
+                                -Dsonar.projectKey=test-baufest \
+                                -Dsonar.sources=. \
+                                -Dsonar.host.url=http://localhost:9000 \
+                                -Dsonar.login=6d04544a33272dddd889aef89ee658badc6009b2"
                             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \                
                 }
             }
