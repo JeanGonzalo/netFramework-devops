@@ -12,14 +12,14 @@ def jsonParse(def json) {
 }
 
 pipeline {
-  agent {label "net"}
+  agent any
 
 
   environment {
       // General Variables for Pipeline
       PROJECT_ROOT = 'project-test'
       SONAR_HOST_URL = 'http://localhost:9000'
-      SONAR_AUTH_TOKEN = 'd1230bedb29dab2e4f25939dd692b456a82e50c4'
+      SONAR_AUTH_TOKEN = '6d04544a33272dddd889aef89ee658badc6009b2'
 
   }
 

@@ -1,6 +1,8 @@
 /node_modules
-/.sonarqube_home
-/sonarqube_home
+/.sonarqube_home/*
+/sonarqube_home/*
+sonarqube_home/*
+sonarqube_home
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
