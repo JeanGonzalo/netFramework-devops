@@ -41,9 +41,9 @@ pipeline {
                 //         }
 
                 script {
-                        sh "uname -a"
+                        ws "uname -a"
 
-                        sh  " sonar-scanner \
+                        ws  " sonar-scanner \
                                 -Dsonar.projectKey=test-baufest \
                                 -Dsonar.sources=. \
                                 -Dsonar.host.url=http://localhost:9000 \
