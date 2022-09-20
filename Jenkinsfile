@@ -36,20 +36,19 @@ pipeline {
             //     expression { !enableDeploy() }
             // }
             steps {
-                script {
+                docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock') {
+                        sh "--version"
+                        }
+
+                // script {
                     
 
-                        sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
-                              -D sonar.login=${SONAR_AUTH_TOKEN} \
-                              -D sonar.projectKey=${PROJECT_ROOT} \
-                              -D sonar.projectName=${PROJECT_ROOT} "
-                            //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
-                    
-                    // timeout(time: 3, unit: 'MINUTES') {
-                    // // In case of SonarQube failure or direct timeout exceed, stop Pipeline
-                    // waitForQualityGate abortPipeline: qualityGateValidation(waitForQualityGate())
-                    //}
-                }
+                //         sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
+                //               -D sonar.login=${SONAR_AUTH_TOKEN} \
+                //               -D sonar.projectKey=${PROJECT_ROOT} \
+                //               -D sonar.projectName=${PROJECT_ROOT} "
+                //             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \                
+                // }
             }
       }
 
