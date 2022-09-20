@@ -12,7 +12,7 @@ def jsonParse(def json) {
 }
 
 pipeline {
-  agent any
+  agent none
 
 
   environment {
@@ -41,9 +41,9 @@ pipeline {
                 //         }
 
                 script {
-                        ws "uname -a"
+                        sh "uname -a"
 
-                        ws  " sonar-scanner \
+                        sh  " sonar-scanner \
                                 -Dsonar.projectKey=test-baufest \
                                 -Dsonar.sources=. \
                                 -Dsonar.host.url=http://localhost:9000 \
