@@ -41,7 +41,7 @@ pipeline {
                 //         }
 
                 script {
-                    
+                        sh "uname -a"
 
                         sh  " sonar-scanner \
                                 -Dsonar.projectKey=test-baufest \
