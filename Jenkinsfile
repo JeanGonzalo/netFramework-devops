@@ -36,19 +36,19 @@ pipeline {
             //     expression { !enableDeploy() }
             // }
             steps {
-                docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock --entrypoint="" --net net_devops') {
-                        sh "--version"
-                        }
+                // docker.image('newtmitch/sonar-scanner').inside('-v /var/run/docker.sock:/var/run/docker.sock --entrypoint="" --net net_devops') {
+                //         sh "--version"
+                //         }
 
-                // script {
+                script {
                     
 
-                //         sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
-                //               -D sonar.login=${SONAR_AUTH_TOKEN} \
-                //               -D sonar.projectKey=${PROJECT_ROOT} \
-                //               -D sonar.projectName=${PROJECT_ROOT} "
-                //             //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \                
-                // }
+                        sh  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
+                              -D sonar.login=${SONAR_AUTH_TOKEN} \
+                              -D sonar.projectKey=${PROJECT_ROOT} \
+                              -D sonar.projectName=${PROJECT_ROOT} "
+                            //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \                
+                }
             }
       }
 

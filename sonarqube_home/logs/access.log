@@ -142,3 +142,6 @@
 172.20.0.1 - - [20/Sep/2022:06:33:54 +0000] "POST /api/webhooks/create HTTP/1.1" 400 97 "http://localhost:9000/admin/webhooks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "AYNZNQ0GoIqnGQF7AACN"
 172.20.0.1 - - [20/Sep/2022:06:33:54 +0000] "POST /api/webhooks/create HTTP/1.1" 400 97 "http://localhost:9000/admin/webhooks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "AYNZNQ0GoIqnGQF7AACO"
 172.20.0.1 - - [20/Sep/2022:06:33:54 +0000] "POST /api/webhooks/create HTTP/1.1" 400 97 "http://localhost:9000/admin/webhooks" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "AYNZNQ0GoIqnGQF7AACP"
+172.20.0.1 - - [20/Sep/2022:07:11:33 +0000] "GET /batch/index HTTP/1.1" 200 - "-" "ScannerCLI/4.7.0.2747" "AYNZNQ0GoIqnGQF7AACQ"
+172.20.0.1 - - [20/Sep/2022:07:11:34 +0000] "GET /batch/file?name=sonar-scanner-engine-shaded-9.2.4.50792-all.jar HTTP/1.1" 200 - "-" "ScannerCLI/4.7.0.2747" "AYNZNQ0GoIqnGQF7AACR"
+172.20.0.1 - - [20/Sep/2022:07:11:34 +0000] "GET /api/settings/values.protobuf HTTP/1.1" 401 - "-" "ScannerCLI/4.7.0.2747" "AYNZNQ0GoIqnGQF7AACS"
