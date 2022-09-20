@@ -12,7 +12,7 @@ def jsonParse(def json) {
 }
 
 pipeline {
-  agent any
+  agent {label "net"}
 
 
   environment {
@@ -42,13 +42,7 @@ pipeline {
 
                 script {
                         sh "uname -a"
-                        sh "mkdir sonar-scanner \
-                                cd sonar-scanner \
-                                wget https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner \
-                                unzip sonar-scanner-msbuild-4.2.0.1214-netcoreapp2.0.zip \
-                                cp sonar-scanner-msbuild-4.2.0.1214-netcoreapp2.0/ /opt/sonar-scanner \
-                                sudo ln -s /opt/sonar-scanner /usr/bin/sonar-scanner \"
-
+                        
                         sh  " sonar-scanner \
                                 -Dsonar.projectKey=test-baufest \
                                 -Dsonar.sources=. \
