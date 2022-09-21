@@ -22,6 +22,7 @@ pipeline {
       SONAR_AUTH_TOKEN = '6d04544a33272dddd889aef89ee658badc6009b2'
       NEXUS_URL = "http://192.168.1.34:8081"
       NEXUS_REPOSITORY = "nuget-hosted"
+      PATH = "D:\jenkins\workspace\blue-test"
 
   }
 
@@ -33,19 +34,19 @@ pipeline {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JeanGonzalo/netFramework-devops.git']]])        }
       }
     
-      stage("SonarQube - Static Code Analysis") {
-            steps {
-                script {
+    //   stage("SonarQube - Static Code Analysis") {
+    //         steps {
+    //             script {
                     
 
-                        powershell  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
-                              -D sonar.login=${SONAR_AUTH_TOKEN} \
-                              -D sonar.projectKey=${PROJECT_ROOT} \
-                              -D sonar.projectName=${PROJECT_ROOT} "
-                            //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
-                }
-            }
-      }
+    //                     powershell  " sonar-scanner -X -D sonar.host.url=${SONAR_HOST_URL} \
+    //                           -D sonar.login=${SONAR_AUTH_TOKEN} \
+    //                           -D sonar.projectKey=${PROJECT_ROOT} \
+    //                           -D sonar.projectName=${PROJECT_ROOT} "
+    //                         //-Dsonar.projectVersion='${projectVersion}' ${pullRequestParams} \
+    //             }
+    //         }
+    //   }
 
       stage("Build .net framework") {
             steps {
@@ -60,8 +61,8 @@ pipeline {
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
-                            sh  "pwd"
-                            sh  "dotnet nuget push '**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
+                            sh  "${pwd}"
+                            sh  "dotnet nuget push '${PATH}/**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
       }
