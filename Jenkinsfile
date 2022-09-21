@@ -52,7 +52,7 @@ pipeline {
                 script {
                     
 
-                        powershell  " MsBuild.exe /t:Rebuild "
+                        sh  " MsBuild.exe /t:Rebuild "
                 }
             }
       }
@@ -60,8 +60,8 @@ pipeline {
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
-                            powershell  "pwd"
-                            powershell  "dotnet nuget push '**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
+                            sh  "pwd"
+                            sh  "dotnet nuget push '**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
       }
