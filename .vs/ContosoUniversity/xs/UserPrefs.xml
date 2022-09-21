@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{264E21D6-4024-4A53-B1BE-1CD42F3348FE}|">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ContosoUniversity" expanded="True">
-            <Node name="ContosoUniversity" expanded="True">
-              <Node name="Packages" selected="True" />
-            </Node>
+            <Node name="ContosoUniversity" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -15,11 +14,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ContosoUniversity PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

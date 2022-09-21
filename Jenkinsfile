@@ -61,7 +61,7 @@ pipeline {
             steps {
                 script {   
                             powershell  "pwd"
-                            powershell  " nuget push '**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
+                            powershell  "nuget push '**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
       }
