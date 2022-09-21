@@ -52,7 +52,7 @@ pipeline {
                 script {
                     
 
-                        sh  " MsBuild.exe /t:Rebuild "
+                        powershell  " MsBuild.exe /t:Rebuild "
                 }
             }
       }
