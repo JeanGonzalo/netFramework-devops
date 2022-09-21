@@ -22,7 +22,7 @@ pipeline {
       SONAR_AUTH_TOKEN = '6d04544a33272dddd889aef89ee658badc6009b2'
       NEXUS_URL = "http://192.168.1.34:8081"
       NEXUS_REPOSITORY = "nuget-hosted"
-      PATHH = "D:\jenkins\workspace\blue-test"
+      PATHH = "D:/jenkins/workspace/blue-test"
 
   }
 
