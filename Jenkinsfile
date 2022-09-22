@@ -62,8 +62,8 @@ pipeline {
             steps {
                 script {   
                             
-                            bat "dir \
-                            cd ContosoUniversity \
+                            bat "dir &&
+                            cd ContosoUniversity &&
                             cd ,"
                             //bat "zip bin2.zip bin/"
 
