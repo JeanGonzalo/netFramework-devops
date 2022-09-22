@@ -62,6 +62,7 @@ pipeline {
             steps {
                 script {   
                             bat "dir && cd ContosoUniversity && cd , && dir"
+                            bat "echo ahoraaaaa && whoami && cd ,"
                             
                             // bat "dir \
                             // cd ContosoUniversity \
