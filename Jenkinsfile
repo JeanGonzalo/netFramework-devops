@@ -48,20 +48,20 @@ pipeline {
     //         }
     //   }
 
-      stage("Build .net framework") {
-            steps {
-                script {
+    //   stage("Build .net framework") {
+    //         steps {
+    //             script {
                     
 
-                        powershell  " MsBuild.exe /t:Rebuild "
-                }
-            }
-      }
+    //                     powershell  " MsBuild.exe /t:Rebuild "
+    //             }
+    //         }
+    //   }
 
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
-                            bat "ls -la"
+                            bat "git --version"
                             bat  "dotnet nuget push '${PATHH}/**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
