@@ -61,8 +61,8 @@ pipeline {
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
-                            //sh  "${pwd}"
-                            sh  "dotnet nuget push '${PATHH}/**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
+                            bat "ls -la"
+                            bat  "dotnet nuget push '${PATHH}/**/*.nupkg' -source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
       }
