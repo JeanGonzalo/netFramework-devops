@@ -54,7 +54,7 @@ pipeline {
                 script {
                     
 
-                        powershell  " MsBuild.exe /t:Rebuild "
+                        bat  "MsBuild.exe /t:Clean && MsBuild.exe /t:Rebuild"
                 }
             }
       }
