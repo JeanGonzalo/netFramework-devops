@@ -62,7 +62,9 @@ pipeline {
             steps {
                 script {   
                             bat "git --version"
-                            bat "nuget"
+                            bat "cd ContosoUniversity/"
+                            bat "zip bin2.zip bin/"
+
                             //bat  "dotnet nuget push '${PATHH}/**/*.nupkg' --source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
