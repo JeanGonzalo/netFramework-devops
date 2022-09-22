@@ -61,11 +61,12 @@ pipeline {
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
+                            bat "dir && cd ContosoUniversity && cd , && dir"
                             
-                            bat "dir \
-                            cd ContosoUniversity \
-                            cd , \
-                            dir"
+                            // bat "dir \
+                            // cd ContosoUniversity \
+                            // cd , \
+                            // dir"
                             //bat "zip bin2.zip bin/"
 
                             //bat  "dotnet nuget push '${PATHH}/**/*.nupkg' --source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
