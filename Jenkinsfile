@@ -62,7 +62,8 @@ pipeline {
             steps {
                 script {   
                             bat "git --version"
-                            bat  "dotnet nuget push '${PATHH}/**/*.nupkg' --source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
+                            bat "nuget"
+                            //bat  "dotnet nuget push '${PATHH}/**/*.nupkg' --source ${NEXUS_URL}/repository/${NEXUS_REPOSITORY}"
                 }
             }
       }
