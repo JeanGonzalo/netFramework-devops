@@ -53,8 +53,8 @@ pipeline {
             steps {
                 script {
                     
-
-                        bat  "MsBuild.exe /t:Clean && MsBuild.exe /t:Rebuild"
+                        powershell  "MsBuild.exe /t:Rebuild"
+                        //powershell  "MsBuild.exe /t:Clean && MsBuild.exe /t:Rebuild"
                 }
             }
       }
