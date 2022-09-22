@@ -39,3 +39,46 @@ C:\Users\Alex\Documents\Visual Studio 2017\Projects\ContosoUniversity\ContosoUni
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\ContosoUniversity.dll.config
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\ContosoUniversity.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\ContosoUniversity.pdb
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\Antlr3.Runtime.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\EntityFramework.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\EntityFramework.SqlServer.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\Newtonsoft.Json.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\PagedList.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\PagedList.Mvc.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Helpers.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Mvc.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Optimization.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Razor.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.Razor.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\WebGrease.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\EntityFramework.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\EntityFramework.SqlServer.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\PagedList.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\PagedList.Mvc.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Helpers.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Mvc.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Optimization.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.Razor.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\System.Web.WebPages.Razor.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\Antlr3.Runtime.pdb
+D:\jenkins\workspace\blue-test\ContosoUniversity\bin\Debug\Newtonsoft.Json.xml
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.csprojAssemblyReference.cache
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ComplexDataModel.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.DepartmentSP.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.RowVersion.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.Inheritance.resources
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.cache
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.CoreCompileInputs.cache
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.CopyComplete
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.dll
+D:\jenkins\workspace\blue-test\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
