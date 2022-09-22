@@ -23,6 +23,7 @@ pipeline {
       NEXUS_URL = "http://192.168.1.34:8081"
       NEXUS_REPOSITORY = "nuget-hosted"
       PATHH = "D:/jenkins/workspace/blue-test"
+      PLATFORM= "Debug"
 
   }
 
@@ -61,8 +62,8 @@ pipeline {
       stage("Publish to Nexus Repository Manager") {
             steps {
                 script {   
-                            bat "dir && cd ContosoUniversity && cd , && dir"
-                            bat "echo ahoraaaaa && whoami && cd ,"
+                            bat "cd ContosoUniversity/bin && tar -a -c -f ${PLATFORM}.zip ${PLATFORM} && dir"
+                            //bat "dir && cd ContosoUniversity && cd , && dir"
                             
                             // bat "dir \
                             // cd ContosoUniversity \
