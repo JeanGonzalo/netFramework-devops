@@ -48,15 +48,15 @@ pipeline {
     //         }
     //   }
 
-    //   stage("Build .net framework") {
-    //         steps {
-    //             script {
+      stage("Build .net framework") {
+            steps {
+                script {
                     
 
-    //                     powershell  " MsBuild.exe /t:Rebuild "
-    //             }
-    //         }
-    //   }
+                        powershell  " MsBuild.exe /t:Rebuild "
+                }
+            }
+      }
 
       stage("Publish to Nexus Repository Manager") {
             steps {
