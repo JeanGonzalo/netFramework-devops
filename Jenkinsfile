@@ -55,6 +55,7 @@ pipeline {
                     
                         powershell  "MsBuild.exe /t:Rebuild"
                         //powershell  "MsBuild.exe /t:Clean && MsBuild.exe /t:Rebuild"
+                        //MSBuild.exe Solution.sln /p:Configuration=Debug 
                 }
             }
       }

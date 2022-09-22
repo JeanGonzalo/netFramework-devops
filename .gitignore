@@ -12,3 +12,8 @@ sonarqube_home
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+/ConstosoUniversity/bin/Release
+/ConstosoUniversity/bin/Release/*
+/ConstosoUniversity/bin/Debug
+/ConstosoUniversity/bin/Debug/*
